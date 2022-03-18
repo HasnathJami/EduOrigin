@@ -6,45 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity">
 
+
     <ImageView
         android:id="@+id/mainLogoId"
         android:layout_width="241dp"
         android:layout_height="199dp"
-        android:layout_marginTop="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477"
         app:srcCompat="@drawable/splash_logo" />
-
 
     <TextView
         android:id="@+id/subTextId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
         android:text="from"
         android:textColor="#5A5C5C"
+
+
         android:textSize="18sp"
-
-
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainLogoId" />
+        app:layout_constraintTop_toBottomOf="@+id/mainLogoId"
+        app:layout_constraintVertical_bias="0.685" />
 
     <TextView
         android:id="@+id/subText2Id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:text="Hasnath"
-        android:textColor="#00BCD4"
 
+        android:textColor="#00BCD4"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/subTextId"
-        app:layout_constraintStart_toStartOf="@+id/subTextId"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subTextId" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

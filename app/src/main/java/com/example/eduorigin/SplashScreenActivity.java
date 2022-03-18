@@ -11,6 +11,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.eduorigin.registration.SignInActivity;
+import com.example.eduorigin.registration.SignUpActivity;
+
 public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +22,9 @@ public class SplashScreenActivity extends AppCompatActivity {
         TextView tv1,tv2;
         Animation top,bottom;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
-
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_splash_screen);
 
         img1=findViewById(R.id.mainLogoId);
         tv1=findViewById(R.id.subTextId);
@@ -38,7 +40,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), SignInActivity.class));
                 finish();
 
             }
