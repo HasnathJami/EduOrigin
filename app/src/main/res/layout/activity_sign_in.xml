@@ -12,29 +12,29 @@
         android:layout_height="match_parent">
 
         <EditText
-            android:id="@+id/emailRegisterFieldId"
+            android:id="@+id/emailLoginFieldId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
             android:layout_marginTop="164dp"
             android:ems="10"
-            android:hint="Enter Email"
+            android:hint="Email"
             android:inputType="textEmailAddress"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/passwordRegisterFieldId"
+            android:id="@+id/passwordLoginFieldId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:ems="10"
-            android:hint="Enter Password"
+            android:hint="Password"
             android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="@+id/emailRegisterFieldId"
+            app:layout_constraintEnd_toEndOf="@+id/emailLoginFieldId"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/emailRegisterFieldId"
-            app:layout_constraintTop_toBottomOf="@+id/emailRegisterFieldId" />
+            app:layout_constraintStart_toStartOf="@+id/emailLoginFieldId"
+            app:layout_constraintTop_toBottomOf="@+id/emailLoginFieldId" />
 
         <Button
             android:id="@+id/loginButtonId"
@@ -42,9 +42,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
             android:text="Login"
-            app:layout_constraintEnd_toEndOf="@+id/passwordRegisterFieldId"
-            app:layout_constraintStart_toStartOf="@+id/passwordRegisterFieldId"
-            app:layout_constraintTop_toBottomOf="@+id/passwordRegisterFieldId" />
+            app:layout_constraintEnd_toEndOf="@+id/passwordLoginFieldId"
+            app:layout_constraintStart_toStartOf="@+id/passwordLoginFieldId"
+            app:layout_constraintTop_toBottomOf="@+id/passwordLoginFieldId" />
 
         <TextView
             android:id="@+id/askForRegisterInLoginActivityId"
@@ -57,5 +57,16 @@
             app:layout_constraintEnd_toEndOf="@+id/loginButtonId"
             app:layout_constraintStart_toStartOf="@+id/loginButtonId"
             app:layout_constraintTop_toBottomOf="@+id/loginButtonId" />
+
+        <TextView
+            android:id="@+id/responseWarningId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/askForRegisterInLoginActivityId"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/askForRegisterInLoginActivityId"
+            app:layout_constraintTop_toBottomOf="@+id/askForRegisterInLoginActivityId" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
