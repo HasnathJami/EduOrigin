@@ -1,6 +1,7 @@
 package com.example.eduorigin.adminpanel;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,10 +17,13 @@ public class AdminHomePanelActivity extends AppCompatActivity {
 
     private Button adminLogOut;
     private TextView adminResponseWarning;
+    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("Admin Panel");
+        //getSupportActionBar().setTitle("Admin Panel");
+        toolbar=findViewById(R.id.toolBarId);
+        setSupportActionBar(toolbar);
         setContentView(R.layout.activity_admin_home_panel);
 
 

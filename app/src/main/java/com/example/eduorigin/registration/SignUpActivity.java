@@ -2,6 +2,8 @@ package com.example.eduorigin.registration;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +31,10 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+        //Toolbar toolbar=findViewById(R.id.toolBarId);
+        //setSupportActionBar(toolbar);
+
+
 
         nameRegister=findViewById(R.id.nameRegisterFieldId);
         emailRegister=findViewById(R.id.emailRegisterFieldId);

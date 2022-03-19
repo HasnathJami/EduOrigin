@@ -22,7 +22,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         TextView tv1,tv2;
         Animation top,bottom;
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_screen);
 

@@ -88,6 +88,7 @@ public class SignInActivity extends AppCompatActivity {
                        if(email.equals(adminEmail))
                        {
                            startActivity( new Intent(getApplicationContext(), AdminHomePanelActivity.class) );
+
                            finish();
                        }
                        else{

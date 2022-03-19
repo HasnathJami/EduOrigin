@@ -15,6 +15,12 @@
         android:theme="@style/Theme.EduOrigin"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".onlinequiz.OnlineQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".booklibrary.BookLibraryActivity"
+            android:exported="false" />
+        <activity
             android:name=".adminpanel.AdminHomePanelActivity"
             android:exported="false" />
         <activity
@@ -35,9 +41,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".userpanel.MainActivity"
-            android:exported="true" />
+
     </application>
 
 </manifest>
