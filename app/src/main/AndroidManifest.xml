@@ -15,6 +15,9 @@
         android:theme="@style/Theme.EduOrigin"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".adminpanel.AdminHomePanelActivity"
+            android:exported="false" />
+        <activity
             android:name=".DashboardActivity"
             android:exported="false" />
         <activity
@@ -33,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".userpanel.MainActivity"
             android:exported="true" />
     </application>
 

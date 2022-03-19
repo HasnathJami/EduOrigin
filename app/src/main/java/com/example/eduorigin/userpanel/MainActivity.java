@@ -1,4 +1,4 @@
-package com.example.eduorigin;
+package com.example.eduorigin.userpanel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.eduorigin.R;
 import com.example.eduorigin.registration.SignUpActivity;
 
 public class MainActivity extends AppCompatActivity {

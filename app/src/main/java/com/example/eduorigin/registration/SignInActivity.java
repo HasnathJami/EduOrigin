@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.example.eduorigin.DashboardActivity;
 import com.example.eduorigin.R;
+import com.example.eduorigin.adminpanel.AdminHomePanelActivity;
 import com.example.eduorigin.apicontrollers.ApiController;
 import com.example.eduorigin.models.ResponseModel;
 
@@ -25,6 +26,7 @@ public class SignInActivity extends AppCompatActivity {
     private TextView tv1,responseWarning;
     private EditText emailLogin,passwordLogin;
     private Button loginButton;
+    private final String adminEmail="admin@gmail.com";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,7 @@ public class SignInActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
                 loginProcess();
 
@@ -80,8 +83,18 @@ public class SignInActivity extends AppCompatActivity {
                        editor.commit();
                        editor.apply();
 
-                       startActivity( new Intent(getApplicationContext(), DashboardActivity.class) );
-                       finish();
+
+
+                       if(email.equals(adminEmail))
+                       {
+                           startActivity( new Intent(getApplicationContext(), AdminHomePanelActivity.class) );
+                           finish();
+                       }
+                       else{
+                           startActivity( new Intent(getApplicationContext(), DashboardActivity.class) );
+                           finish();
+                       }
+
 
                    }
                    if(output.equals("failed"))
@@ -107,10 +120,15 @@ public class SignInActivity extends AppCompatActivity {
        {
 
            SharedPreferences sp=getSharedPreferences("credential",MODE_PRIVATE);
+           String email=emailLogin.getText().toString();
+           if(sp.contains("email") && !email.equals("admin@gmail.com") )
 
-           if(sp.contains("email"))
            {
                startActivity(new Intent(getApplicationContext(),DashboardActivity.class));
+           }
+           else if(sp.contains("email") && email.equals(adminEmail) )
+           {
+               startActivity(new Intent(getApplicationContext(),AdminHomePanelActivity.class));
            }
 
            else{
