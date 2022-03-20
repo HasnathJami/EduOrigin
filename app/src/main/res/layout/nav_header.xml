@@ -3,14 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#00BCD4"
+    android:background="#FF9800"
+    android:id="@+id/navHeaderId"
+
     >
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/splash_logo"
         android:id="@+id/navHeaderLogoId"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
 
         />
 
@@ -18,18 +23,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EduOrigin"
-        android:textColor="#111111"
+        android:textColor="#F2EEEE"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
         />
 
 
     <TextView
+        android:id="@+id/navHeaderEmailId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="jishanc@gmail.com"
+        android:text=""
         android:textSize="18sp"
-        android:textColor="#3F51B5"
+        android:textColor="#673AB7"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
         />
 
 </LinearLayout>

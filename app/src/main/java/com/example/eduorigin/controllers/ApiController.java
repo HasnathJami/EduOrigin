@@ -1,4 +1,4 @@
-package com.example.eduorigin.apicontrollers;
+package com.example.eduorigin.controllers;
 
 import com.example.eduorigin.apisets.ApiSet;
 
@@ -26,9 +26,10 @@ public class ApiController {
 
     }
 
-    //Confusion or getapi()
+
     public ApiSet getapi()
     {
         return retrofit.create(ApiSet.class);
     }
+
 }

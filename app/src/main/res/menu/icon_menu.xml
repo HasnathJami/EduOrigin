@@ -1,24 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/menu_bookLibrary"
-        android:title="Book Library"
-        android:icon="@drawable/book_library"
 
-        />
+    <group android:checkableBehavior="single">
 
 
-    <item
-        android:id="@+id/menu_quiz"
-        android:title="Online Quiz"
-        android:icon="@drawable/quiz"
-        />
+        <item
+            android:id="@+id/menu_bookLibrary"
+            android:title="Book Library"
+            android:icon="@drawable/book_library"
 
-    <item
-        android:id="@+id/menu_logout"
-        android:title="Logout"
-        android:icon="@drawable/logout"
-        />
+            />
+
+
+        <item
+            android:id="@+id/menu_quiz"
+            android:title="Online Quiz"
+            android:icon="@drawable/quiz"
+            />
+
+
+        <item
+            android:id="@+id/menu_settings"
+            android:title="Settings"
+            android:icon="@drawable/settings"
+            />
+
+
+        <item
+            android:id="@+id/menu_aboutus"
+            android:title="About Us"
+            android:icon="@drawable/about_us"
+            />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:title="Logout"
+            android:icon="@drawable/logout"
+            />
+
+
+
+
+    </group>
+
+
+
+    <item  android:title="Learning Resources" >
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/menu_w3School"
+                    android:icon="@drawable/order_list"
+                    android:title="W3 School"
+
+
+                    />
+
+
+                <item
+                    android:id="@+id/menu_geeksForGeeks"
+                    android:icon="@drawable/order_list"
+                    android:title="GeeksforGeeks"
+
+
+                    />
+
+                <item
+                    android:id="@+id/menu_tutorialPoint"
+                    android:icon="@drawable/order_list"
+                    android:title="Tutorialspoint"
+                    />
+
+
+                  <item
+                    android:id="@+id/menu_javaTPoint"
+                    android:icon="@drawable/order_list"
+                    android:title="JavaTPoint"
+
+
+                />
+
+
+
+
+            </group>
+
+
+
+
+        </menu>
+
+    </item>
+
 
 </menu>

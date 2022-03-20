@@ -1,14 +1,14 @@
     package com.example.eduorigin.models;
 
-    public class ResponseModel {
+    public class ResponseModelRegistration {
 
         String message;
 
-        public ResponseModel(String message) {
+        public ResponseModelRegistration(String message) {
             this.message = message;
         }
 
-        public ResponseModel() {
+        public ResponseModelRegistration() {
         }
 
         public String getMessage() {

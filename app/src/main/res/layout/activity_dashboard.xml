@@ -22,7 +22,7 @@
             android:id="@+id/toolBarId"
             app:title="EduOrigin"
             app:titleTextColor="#EBE6E6"
-            android:background="#3F51B5"
+            android:background="#FF9800"
 
             />
 

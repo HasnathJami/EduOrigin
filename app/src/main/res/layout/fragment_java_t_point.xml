@@ -3,21 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".featurefragments.OnlineQuizFragment">
+    tools:context=".learningresourcefragments.JavaTPointFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="This is online quiz fragment"
-        android:textSize="20sp"
-        android:id="@+id/up"
-        android:gravity="center"
-
-
+        android:id="@+id/javaTPointWebViewId"
         />
-
-
-
 </FrameLayout>

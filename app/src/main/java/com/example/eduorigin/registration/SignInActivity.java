@@ -14,8 +14,8 @@ import android.widget.TextView;
 import com.example.eduorigin.DashboardActivity;
 import com.example.eduorigin.R;
 import com.example.eduorigin.adminpanel.AdminHomePanelActivity;
-import com.example.eduorigin.apicontrollers.ApiController;
-import com.example.eduorigin.models.ResponseModel;
+import com.example.eduorigin.controllers.ApiController;
+import com.example.eduorigin.models.ResponseModelRegistration;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -48,6 +48,7 @@ public class SignInActivity extends AppCompatActivity {
         });
 
         userExistenceChecking();
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,12 +66,12 @@ public class SignInActivity extends AppCompatActivity {
        {
            String email=emailLogin.getText().toString();
            String password=passwordLogin.getText().toString();
-           Call<ResponseModel> call=ApiController.getInstance().getapi().userVerification(email,password);
-           call.enqueue(new Callback<ResponseModel>() {
+           Call<ResponseModelRegistration> call=ApiController.getInstance().getapi().userVerification(email,password);
+           call.enqueue(new Callback<ResponseModelRegistration>() {
                @Override
-               public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
+               public void onResponse(Call<ResponseModelRegistration> call, Response<ResponseModelRegistration> response) {
 
-                   ResponseModel obj=response.body();
+                   ResponseModelRegistration obj=response.body();
                    String output=obj.getMessage().toString();
 
                    if(output.equals("exist"))
@@ -92,6 +93,7 @@ public class SignInActivity extends AppCompatActivity {
                            finish();
                        }
                        else{
+
                            startActivity( new Intent(getApplicationContext(), DashboardActivity.class) );
                            finish();
                        }
@@ -109,7 +111,7 @@ public class SignInActivity extends AppCompatActivity {
                }
 
                @Override
-               public void onFailure(Call<ResponseModel> call, Throwable t) {
+               public void onFailure(Call<ResponseModelRegistration> call, Throwable t) {
 
                    responseWarning.setTextColor(Color.RED);
                    responseWarning.setText("Something Went wrong");
