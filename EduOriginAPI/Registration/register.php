@@ -21,14 +21,17 @@
 		 $res=mysqli_query($conn,$qry2);
 		 
 		 if($res==true)
-			 $response="insterted";	 
+			 //$response="inserted";	
+             $response['message']="inserted";		 
 		 else
-			 $response="failed";
+			 //$response="failed";
+		     $response['message']="failed";
 		 
 	 }
 	 
 	 
-	 echo $response;
+	// echo $response;
+	echo json_encode($response);
 
 
 
