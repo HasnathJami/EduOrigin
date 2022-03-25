@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/menu_bookUploadAdmin"
+            android:title="Book"
+            android:icon="@drawable/book_library_admin"
+            android:iconTint="@color/white"
+
+            />
+
+        <item
+            android:id="@+id/menu_quizCreationAdmin"
+            android:title="Quiz"
+            android:icon="@drawable/quiz_admin"
+
+
+
+            />
+
+        <item
+            android:id="@+id/menu_Logout_admin"
+            android:title="Logout"
+            android:icon="@drawable/admin_logout"
+
+            />
+
+
+
+
+
+
+
+    </group>
+
+</menu>

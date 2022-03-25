@@ -50,7 +50,7 @@ public class DashboardActivity extends AppCompatActivity {
         navHeaderEmail = (TextView) headerView.findViewById(R.id.navHeaderEmailId);
         navHeaderEmail.setText(output);
 
-        userExistenceCheck();
+        //userExistenceCheck();
 
 
 
@@ -160,8 +160,6 @@ public class DashboardActivity extends AppCompatActivity {
 
                 }
 
-
-
                 return true;
 
 
@@ -177,6 +175,9 @@ public class DashboardActivity extends AppCompatActivity {
         SharedPreferences.Editor editor=sp.edit();
         editor.remove("email");
         editor.remove("password");
+        editor.remove("result");
+        //editor.remove("jishanc@gmail.com");
+        //editor.remove("hero@gmail.com");
         editor.commit();
         editor.apply();
 
@@ -184,11 +185,11 @@ public class DashboardActivity extends AppCompatActivity {
         finish();
     }
 
-     private void  userExistenceCheck()
-     {
-         SharedPreferences sp=getSharedPreferences("credential",MODE_PRIVATE);
-         if(sp.contains("email"))
-         {
+    // private void  userExistenceCheck()
+   //  {
+       //  SharedPreferences sp=getSharedPreferences("credential",MODE_PRIVATE);
+       //  if(sp.contains("email"))
+       //  {
              //works like navigation drawer username appears when user is login
              //responseWarningDashboard.setText(sp.getString("email",""));
              //navHeaderEmail.setText("out");
@@ -198,11 +199,11 @@ public class DashboardActivity extends AppCompatActivity {
 //             navHeaderEmail = (TextView) headerView.findViewById(R.id.navHeaderEmailId);
               //navHeaderEmail.setText(output);
 
-         }
+        // }
          //else{
          //    startActivity(new Intent(getApplicationContext(), SignInActivity.class));
         // }
-     }
+
 
 
  //   @Override

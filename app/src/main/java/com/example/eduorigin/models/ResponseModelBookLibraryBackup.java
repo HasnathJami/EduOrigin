@@ -1,17 +1,18 @@
 package com.example.eduorigin.models;
 
-public class ResponseModelBookLibrary {
+public class ResponseModelBookLibraryBackup {
 
-    String id,name,description,image;
+    String id,name,description,image,pdf;
 
-    public ResponseModelBookLibrary() {
-    }
-
-    public ResponseModelBookLibrary(String id, String name, String description, String image) {
+    public ResponseModelBookLibraryBackup(String id, String name, String description, String image, String pdf) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.image = image;
+        this.pdf = pdf;
+    }
+
+    public ResponseModelBookLibraryBackup() {
     }
 
     public String getId() {
@@ -44,5 +45,13 @@ public class ResponseModelBookLibrary {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getPdf() {
+        return pdf;
+    }
+
+    public void setPdf(String pdf) {
+        this.pdf = pdf;
     }
 }

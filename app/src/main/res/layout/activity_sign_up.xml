@@ -9,43 +9,97 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="142dp"
+            android:layout_height="111dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/splash_logo" />
+
+        <TextView
+            android:id="@+id/eduOriginLoginLogoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Edu"
+            android:textColor="#03A9F4"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Origin"
+            android:textColor="#FF9800"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/eduOriginLoginLogoId"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/eduOriginLoginLogoId"
+            app:layout_constraintTop_toTopOf="@+id/eduOriginLoginLogoId" />
+
+
 
         <EditText
             android:id="@+id/nameRegisterFieldId"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="168dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/corner_radius_for_button_edit_text"
+
             android:ems="10"
             android:hint="Name"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:padding="12dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
 
         <EditText
             android:id="@+id/emailRegisterFieldId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/corner_radius_for_button_edit_text"
+
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            app:layout_constraintEnd_toEndOf="@+id/nameRegisterFieldId"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/nameRegisterFieldId"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nameRegisterFieldId" />
 
         <EditText
             android:id="@+id/passwordRegisterFieldId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/corner_radius_for_button_edit_text"
             android:ems="10"
             android:hint="Password"
+
+
             android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="12dp"
             app:layout_constraintEnd_toEndOf="@+id/emailRegisterFieldId"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/emailRegisterFieldId"
@@ -53,12 +107,25 @@
 
         <Button
             android:id="@+id/registerButtonId"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="96dp"
+            android:layout_marginTop="24dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
             android:text="Register"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+
+            app:backgroundTint="#FF5722"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/passwordRegisterFieldId"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/passwordRegisterFieldId"
-            app:layout_constraintTop_toBottomOf="@+id/passwordRegisterFieldId" />
+            app:layout_constraintTop_toBottomOf="@+id/passwordRegisterFieldId"
+            app:layout_constraintVertical_bias="0.087" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

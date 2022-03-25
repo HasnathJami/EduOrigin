@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizResultShowActivity"
+    android:orientation="vertical"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBarId"
+        app:title="Result Summary"
+        app:titleTextColor="#EBE6E6"
+        android:background="#FF9800"
+
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/verdictIconId"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="104dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/accepted" />
+
+
+
+
+        <TextView
+            android:id="@+id/quizResultShowVerdictId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Correct Answer"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verdictIconId" />
+
+        <TextView
+            android:id="@+id/quizResultShowResultId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Your Score is"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/quizResultShowVerdictId"
+            app:layout_constraintStart_toStartOf="@+id/quizResultShowVerdictId"
+            app:layout_constraintTop_toBottomOf="@+id/quizResultShowVerdictId" />
+
+
+        <TextView
+            android:id="@+id/quizCorrectAnswerShowId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_green"
+            app:layout_constraintEnd_toEndOf="@+id/quizResultShowResultId"
+            app:layout_constraintStart_toStartOf="@+id/quizResultShowResultId"
+            app:layout_constraintTop_toBottomOf="@+id/quizResultShowResultId" />
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -9,19 +9,30 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#272B40"
+        android:focusableInTouchMode="true"
+
+        >
 
 
         <androidx.appcompat.widget.SearchView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintCircleRadius="@dimen/cardview_default_elevation"
             android:id="@+id/searchViewId"
+            app:circularflow_defaultRadius="@dimen/cardview_compat_inset_shadow" android:hapticFeedbackEnabled="true"
+            android:elevation="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#EBE2E2"
-            android:iconifiedByDefault="false"
+            android:background="#F8F8FC"
             android:allowClickWhenDisabled="true"
+            android:backgroundTint="#F4EBEB"
+
 
             app:iconifiedByDefault="false"
-
+            android:imeOptions="actionGo"
 
 
 
@@ -34,6 +45,9 @@
             android:id="@+id/recyclerViewId"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:background="#272B40"
+            android:layout_marginTop="2dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintLeft_toLeftOf="parent"

@@ -12,20 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.example.eduorigin.DashboardActivity;
 import com.example.eduorigin.R;
 import com.example.eduorigin.controllers.ApiController;
 import com.example.eduorigin.models.ResponseModelRegistration;
-
-import java.util.HashMap;
-import java.util.Map;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -99,12 +88,12 @@ public class SignUpActivity extends AppCompatActivity {
 
                 if(output.equals("inserted"))
                 {
-                    Toast.makeText(SignUpActivity.this, "Inserted", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), SignInActivity.class));
                     finish();
                 }
                 if(output.equals("failed"))
-                    Toast.makeText(SignUpActivity.this, "Failed to insert", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
 
             }
 

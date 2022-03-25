@@ -3,21 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".featurefragments.OnlineQuizFragment"
+    android:background="#F0EAF8"
 
-    tools:context=".featurefragments.OnlineQuizFragment">
+
+
+    >
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="This is online quiz fragment"
-        android:textSize="20sp"
-        android:id="@+id/up"
-        android:gravity="center"
+        android:layout_height="match_parent">
 
 
-        />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/quizRecyclerViewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
 
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </FrameLayout>

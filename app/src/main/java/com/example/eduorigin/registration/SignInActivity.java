@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.example.eduorigin.DashboardActivity;
 import com.example.eduorigin.R;
-import com.example.eduorigin.adminpanel.AdminHomePanelActivity;
+import com.example.eduorigin.adminpanel.AdminPanelBookUploadActivity;
 import com.example.eduorigin.controllers.ApiController;
 import com.example.eduorigin.models.ResponseModelRegistration;
 
@@ -34,8 +34,8 @@ public class SignInActivity extends AppCompatActivity {
 
         tv1=findViewById(R.id.askForRegisterInLoginActivityId);
         responseWarning=findViewById(R.id.responseWarningId);
-        emailLogin=findViewById(R.id.emailLoginFieldId);
-        passwordLogin=findViewById(R.id.passwordLoginFieldId);
+        emailLogin=findViewById(R.id.emailRegisterFieldId);
+        passwordLogin=findViewById(R.id.passwordRegisterFieldId);
         loginButton=findViewById(R.id.loginButtonId);
 
 
@@ -88,7 +88,9 @@ public class SignInActivity extends AppCompatActivity {
 
                        if(email.equals(adminEmail))
                        {
-                           startActivity( new Intent(getApplicationContext(), AdminHomePanelActivity.class) );
+                           //tartActivity( new Intent(getApplicationContext(), AdminHomePanelActivity.class) );
+                           //startActivity( new Intent(getApplicationContext(), AdminPanelActivity.class) );
+                           startActivity( new Intent(getApplicationContext(), AdminPanelBookUploadActivity.class) );
 
                            finish();
                        }
@@ -124,20 +126,25 @@ public class SignInActivity extends AppCompatActivity {
 
            SharedPreferences sp=getSharedPreferences("credential",MODE_PRIVATE);
            String email=emailLogin.getText().toString();
-           if(sp.contains("email") && !email.equals("admin@gmail.com") )
+           if(sp.contains("email") && !sp.getString("email", "").equals(adminEmail))
 
            {
-               startActivity(new Intent(getApplicationContext(),DashboardActivity.class));
+               startActivity(new Intent(SignInActivity.this,DashboardActivity.class));
+               finish();
            }
-           else if(sp.contains("email") && email.equals(adminEmail) )
+           else if(sp.contains("email") && sp.getString("email","").equals(adminEmail) )
            {
-               startActivity(new Intent(getApplicationContext(),AdminHomePanelActivity.class));
+
+               //startActivity(new Intent(SignInActivity.this, AdminPanelActivity.class));
+               startActivity(new Intent(SignInActivity.this, AdminPanelBookUploadActivity.class));
+
+               finish();
            }
 
            else{
 
-               responseWarning.setText("Please Login");
-               responseWarning.setTextColor(Color.RED);
+              responseWarning.setText("Please Login");
+              responseWarning.setTextColor(Color.RED);
 
            }
        }
