@@ -60,12 +60,12 @@ Android Studio
 2. RecyclerView  
 3. CardView  
 4. Adapter  
-5. MVVM architecture  
-6. Repository   
-7. Kotlin Coroutine  
+5. Material Design 
+6. Dexter   
+7. PDF Viewer 
 8. Live Data  
 9. MySQL Database  
-10. Material UI Components  
+10.UI Design 
 11. Retrofit  
 12. Glide  
 13. WebView  
