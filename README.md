@@ -14,13 +14,15 @@ A user can see the current world news data which is feching through API call. At
 The project is built with Kotlin following the MVVM architecture. Besides, the Room database is used for storing user data and volley library is used in API call.
 
 ## Features:
-1. To-do Task List System
-2. Adding New Task System
-3. Deleting Task from Task List System
-4. Realtime Task Updating System with Recent Data and Time
-5. Task Searching System
-6. Current News Data Through API CALL
-7. Read Famous Online News Paper Through Web View
+1. User Login and Registration System
+2. User Authentication and Session Management System
+3. Online Book Library and Book Reading System
+4. Online MCQ with Scoring System
+5. Particular Book Searching System Through Keywords
+6. Admin Panel for Creating Quizes and Uploading Books
+7. Learning from Many Online Resources through Web View
+8. Realtime Book and Quiz Updating System
+
 
 ### Languages: 
 Java,PHP
