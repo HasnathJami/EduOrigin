@@ -56,19 +56,19 @@ Android Studio
 
 
 ## Topics:
-1. Animated Splash Screen  
-2. RecyclerView  
-3. CardView  
-4. Adapter  
-5. Material Design 
-6. Dexter   
-7. PDF Viewer 
-8. Live Data  
-9. MySQL Database  
-10.UI Design 
-11. Retrofit  
-12. Glide  
-13. WebView  
-14. API CALL
-15. API Development and Integration
+1. Animated Splash Screen    
+2. RecyclerView    
+3. CardView    
+4. Adapter    
+5. Material Design   
+6. Dexter     
+7. PDF Viewer   
+8. Live Data    
+9. MySQL Database    
+10.UI Design   
+11. Retrofit    
+12. Glide    
+13. WebView    
+14. API CALL  
+15. API Development and Integration  
 
