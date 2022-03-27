@@ -1,12 +1,4 @@
-# EduOrigin
-1.EduOrigin is an android app that is based on online learning.  
-2.It has various features like book reading and an online quiz system for learning purposes.  
-3.Besides, It has a to-do list feature that helps a student to set his/her goal.  
-4.The project is built in Android Studio using Java. The Retrofit library is used for API integration. Besides, PHP and MySQL are used in the Backend for API development and Database.
-
-# Project Description
-
-
+# Project Description  
 EduOrigin is an android app that is based on online learning. Here a user can log in and register to the user panel and the sessions of user are managed properly. Then, a user can read various types of programming and sofware related books. He/She can search specific books through kewords. Besides, He/She can give online quizes and gain scores. Here, a user can go through many online resources for the learning purpose.
 Besides, there is an admin panel in this app. An admin can login to the admin panel and upload new books with pdf and also create quizes for the users. All the books and quizes are added and updated instantly in RecyclerView.
 
