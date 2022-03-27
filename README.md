@@ -14,7 +14,7 @@ Besides, there is an admin panel in this app. An admin can login to the admin pa
 
 
 ### Languages: 
-Java,PHP
+Java, PHP
 ### Databases:
 MySQL, SharedPreferences
 ### Tools and Technologies: 
