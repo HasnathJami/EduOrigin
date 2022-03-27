@@ -37,10 +37,10 @@ Android Studio, PhpMyAdmin
 
 
 ### Book Library System
-<img src="./Screenshots/4.png" width="300" height="500" title="" />  <img src="./Screenshots/5.png" width="300" height="500" title="" />  <img src="./Screenshots/5.png" width="400" height="700" title="" />
+<img src="./Screenshots/4.png" width="300" height="500" title="" />  <img src="./Screenshots/5.png" width="300" height="500" title="" />  <img src="./Screenshots/5.png" width="300" height="500" title="" />
 
 ### Particular Task Searching System
-<img src="./Screenshots/8.png" width="400" height="700" title="" /> 
+<img src="./Screenshots/8.png" width="300" height="500" title="" /> 
 
 ### Online Quiz System
 <img src="./Screenshots/6.png" width="300" height="500" title="" />  <img src="./Screenshots/6.png" width="300" height="500" title="" /> 
@@ -51,7 +51,7 @@ Android Studio, PhpMyAdmin
 
 ### Online Resources System
 
-<img src="./Screenshots/9.png" width="400" height="700" title="" /> <img src="./Screenshots/10.png" width="400" height="700" title="" /> 
+<img src="./Screenshots/9.png" width="300" height="500" title="" /> <img src="./Screenshots/10.png" width="300" height="500" title="" /> 
 
 
 
