@@ -7,9 +7,9 @@
 # Project Description
 
 
-My-Day is an **android app** about setting goals and task scheduling and current world news system. Here, a user can set his goals by adding list of to-do tasks.
-He/she can update his regular task list and delete if needed. He/She can also search his regular task through keywords.
-Besides, all the tasks are added and updated instantly in RecyclerView with recent data and time using LiveData and Kotlin coroutines.
+EduOrigin is an android app that is based on online learning.Here, a user can read various types of programming and sofware related books. He/She can search specific books through kewords. Besides, He/She can give online quizes and gain scores. Here, a user can go through many online resources for the learning purpose.
+Besides, all the books and quizes are added and updated instantly in RecyclerView with recent data and time using LiveData and Kotlin coroutines.
+Besides, there is an admin panel in this app. An admin can upload new books with pdf and also create quizes for the users
 A user can see the current world news data which is feching through API call. At last, he/she can read several types of online news paper through Web View.
 The project is built with Kotlin following the MVVM architecture. Besides, the Room database is used for storing user data and volley library is used in API call.
 
@@ -27,7 +27,7 @@ The project is built with Kotlin following the MVVM architecture. Besides, the R
 ### Languages: 
 Java,PHP
 ### Databases:
-MySQL
+MySQL, SharedPreferences
 ### Tools and Technologies: 
 Android Studio
 
