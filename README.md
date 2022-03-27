@@ -64,8 +64,7 @@ Android Studio
 6. Dexter     
 7. PDF Viewer   
 8. Live Data    
-9. MySQL Database    
-10.UI Design   
+9. MySQL Database       
 11. Retrofit    
 12. Glide    
 13. WebView    
