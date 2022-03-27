@@ -22,25 +22,34 @@ Android Studio, PhpMyAdmin
 
 ## Project Demo:
 
-### Splash Screen:
-<img src="./Screenshots/1.png" width="400" height="700" title="" /> 
+### Animated Splash Screen:
+<img src="./Screenshots/1.png" width="300" height="500" title="" /> 
 
-### Current World News System
-<img src="./Screenshots/2.png" width="400" height="700" title="" />     <img src="./Screenshots/3.png" width="" height="700" title="" /> 
+### Login and Registration System
+<img src="./Screenshots/2.png" width="300" height="500" title="" />     <img src="./Screenshots/3.png" width="300" height="500" title="" /> 
 
-### Task Scheduling System
-<img src="./Screenshots/4.png" width="400" height="700" title="" />  <img src="./Screenshots/5.png" width="400" height="700" title="" /> 
+###Admin Panel (Book Uploading System)
+<img src="./Screenshots/4.png" width="300" height="500" title="" />  <img src="./Screenshots/4.png" width="300" height="500" title="" /> 
 
-### Task Adding System
-<img src="./Screenshots/6.png" width="400" height="700" title="" /> 
 
-### Task Updating System
-<img src="./Screenshots/7.png" width="400" height="700" title="" /> 
+###Admin Panel (Quiz Uploading System)
+<img src="./Screenshots/4.png" width="300" height="500" title="" />  <img src="./Screenshots/4.png" width="300" height="500" title="" /> 
+
+
+### Book Library System
+<img src="./Screenshots/4.png" width="300" height="500" title="" />  <img src="./Screenshots/5.png" width="300" height="500" title="" />  <img src="./Screenshots/5.png" width="400" height="700" title="" />
 
 ### Particular Task Searching System
 <img src="./Screenshots/8.png" width="400" height="700" title="" /> 
 
-### Online News Reading System
+### Online Quiz System
+<img src="./Screenshots/6.png" width="300" height="500" title="" />  <img src="./Screenshots/6.png" width="300" height="500" title="" /> 
+
+### Quiz Scoring System
+<img src="./Screenshots/7.png" width="300" height="500" title="" />  <img src="./Screenshots/6.png" width="300" height="500" title="" /> 
+
+
+### Online Resources System
 
 <img src="./Screenshots/9.png" width="400" height="700" title="" /> <img src="./Screenshots/10.png" width="400" height="700" title="" /> 
 
