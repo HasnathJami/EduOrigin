@@ -71,4 +71,7 @@ Android Studio
 14. API CALL  
 15. API Development and Integration  
 16. Material Components
+17. User Registration and Authentication
+18. User Session Management
+19. Admin Session Management
 
