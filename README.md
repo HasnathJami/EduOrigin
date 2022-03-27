@@ -39,7 +39,7 @@ Android Studio, PhpMyAdmin
 ### Book Library System
 <img src="./Screenshots/8.png" width="300" height="500" title="" />  <img src="./Screenshots/9.png" width="300" height="500" title="" />  <img src="./Screenshots/10.png" width="300" height="500" title="" />
 
-### Particular Task Searching System
+### Particular Book Searching System
 <img src="./Screenshots/11.png" width="300" height="500" title="" /> 
 
 ### Online Quiz System
@@ -49,7 +49,7 @@ Android Studio, PhpMyAdmin
 <img src="./Screenshots/14.png" width="300" height="500" title="" />  <img src="./Screenshots/15.png" width="300" height="500" title="" /> 
 
 
-### Online Resources System
+### Online Learning Resources System
 
 <img src="./Screenshots/16.png" width="300" height="500" title="" /> <img src="./Screenshots/17.png" width="300" height="500" title="" /> 
 
