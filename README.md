@@ -60,7 +60,7 @@ Android Studio
 2. RecyclerView    
 3. CardView    
 4. Adapter    
-5. Material Design   
+5. Material UI Design   
 6. Dexter     
 7. PDF Viewer   
 8. Live Data    
@@ -70,5 +70,5 @@ Android Studio
 13. WebView    
 14. API CALL  
 15. API Development and Integration  
-16. UI Design
+16. Material Components
 
